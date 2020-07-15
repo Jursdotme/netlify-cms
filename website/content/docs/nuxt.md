@@ -16,6 +16,8 @@ cd <name-of-your-new-project>
 npm run dev
 ```
 
+When prompted to choose **Deployment target** choose `Static (Static/JAMStack hosting)`.
+
 ## Setting Up Netlify CMS
 
 ### Add the Netlify CMS files to Nuxt
@@ -101,7 +103,7 @@ git push -u origin master
 
 ### Deploying With Netlify
 
-Now you can go ahead and deploy to Netlify. Go to your Netlify dashboard and click **[New site from Git](https://app.netlify.com/start)**. Select the repo you just created. Under **Basic build settings**, you can set the build command to `yarn generate` and the publish directory to `dist`. Click **Deploy site** to get the process going.
+Now you can go ahead and deploy to Netlify. Go to your Netlify dashboard and click **[New site from Git](https://app.netlify.com/start)**. Select the repo you just created. Under **Basic build settings**, you can set the build command to `nuxt build && nuxt export` and the publish directory to `dist`. Click **Deploy site** to get the process going.
 
 ### Authenticating with Netlify Identity
 
